@@ -1,0 +1,22 @@
+[user]
+	name = dazahern
+	email = daz.ahern@digital.cabinet-office.gov.uk
+
+[hub]
+protocol = https
+host = github.gds
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+excludesfile = /opt/boxen/config/git/gitignore
+[push]
+	default = simple
+[alias]
+lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto

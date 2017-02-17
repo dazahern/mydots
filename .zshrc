@@ -52,10 +52,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew vagrant)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/boxen/env.sh
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/darrenahern/govuk/gds-boxen"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -86,4 +85,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/darrenahern/gov
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
+eval "$(rbenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export VAGRANT_GOVUK_NFS=no
+export PATH="/usr/local/bin:${PATH}"

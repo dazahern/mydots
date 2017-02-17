@@ -1,0 +1,8 @@
+"*":
+  "exception-reporting":
+    userId: "505361dd-e695-43cd-a334-6c9940ccc008"
+  "git-plus":
+    general:
+      _analyticsUserId: "41900b23-6ea0-4e24-9b84-e2a971987da8"
+  "linter-puppet-lint":
+    oldVersion: false

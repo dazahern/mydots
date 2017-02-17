@@ -15,6 +15,8 @@ excludesfile = /opt/boxen/config/git/gitignore
 	default = simple
 [alias]
 lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
+co = checkout
+cb = checkout -b 
 
 [color]
     diff = auto
